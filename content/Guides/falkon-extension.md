@@ -7,7 +7,7 @@ draft: false
 
 # Falkon Extension Development: Implementation Guide
 
-*A practical guide to building Falkon from source and creating a Python-based extension using PyFalkon.*
+*A practical guide to building Falkon from source and creating a Python-based extension using Falkon.*
 
 **Monday, January 26, 2026 · 2 min read**
 
