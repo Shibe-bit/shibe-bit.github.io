@@ -5,7 +5,6 @@ tags: [XMPP, Mentorship, OpenSource, Protocol]
 draft: false
 ---
 
-# De-mystifying XMPP: Insights from a Mentorship Session
 
 I recently had the opportunity to sit down with my mentor, **Schimon Jehudah**, for an intensive technical session. We spent time deconstructing XMPP, and it was eye-opening to see how it compares to the traditional web architectures most of us are used to.
 
