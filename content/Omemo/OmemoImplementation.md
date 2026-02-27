@@ -14,7 +14,7 @@ In this guide, we will tear down a fully functional C++ OMEMO Echo Bot. We will 
 
 ![OMEMO Implementation Overview](../assets/imagecopy.png)
 
-## The Prerequisites (Laying the Groundwork)**
+## The Prerequisites (Laying the Groundwork)
 
 Before we even touch encryption keys, we have to prepare the XMPP client to handle the _environment_ OMEMO lives in. OMEMO relies heavily on the server to distribute keys and synchronize devices.
 
@@ -36,7 +36,7 @@ addNewExtension<QXmppCarbonManagerV2>();
 
 ---
 
-## Trust & Identity Management**
+## Trust & Identity Management
 
 Encryption is useless if you are encrypting data for an impostor. Before we manage the cryptography, we must manage **Trust**.
 
@@ -55,7 +55,7 @@ In this example, we use `QXmppAtmTrustMemoryStorage()`. Because it's "Memory Sto
 
 ---
 
-## The Cryptographic Engine (The Manager)**
+## The Cryptographic Engine (The Manager)
 
 Now we arrive at the core of the protocol. We instantiate the OMEMO manager and its storage.
 
@@ -100,7 +100,7 @@ Finally, `load()` pulls any existing cryptographic state (session keys, identity
 
 ---
 
-## The Network Handshake (setUp)**
+## The Network Handshake (setUp)
 
 OMEMO requires your client to publish its keys to the server so others can find you. This cannot happen until you are actually connected to the XMPP server.
 
@@ -127,7 +127,7 @@ Once `setUp()` completes, your bot is officially ready to receive secure message
 
 ---
 
-## shHandling the Message Loop**
+## shHandling the Message Loop
 
 Because we properly configured the `setEncryptionExtension`, the actual bot logic remains incredibly clean. It doesn't need to know anything about AES-256 or Elliptic Curves.
 
